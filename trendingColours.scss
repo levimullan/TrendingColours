@@ -1,10 +1,22 @@
 $helvetica: Helvetica, sans-serif;
 
-$backGround: #F7CAC9;
+$backGround: #4C5D7D;
 
-.font {
+.navbar-default {
+    background-color: $backGround;
+    border-color: $backGround;
+}
+
+.fontThick {
 	font: $helvetica;
-	color: rgb(255,255,255);
+	font-weight: bold;
+	color: white;
+}
+
+.fontThin {
+	font: $helvetica;
+	font-weight: 100;
+	color: white;
 }
 
 .container{
@@ -14,8 +26,7 @@ $backGround: #F7CAC9;
 }
 
 .column {
-	height: 200px;
+	height: 37px;
 	border: 1px solid;
-	border-radius: 5px;
 }
 
