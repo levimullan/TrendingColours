@@ -1,10 +1,21 @@
-$someColour: orange;
+$helvetica: Helvetica, sans-serif;
 
-body {
-	background: pink;
+$backGround: #F7CAC9;
+
+.font {
+	font: $helvetica;
+	color: rgb(255,255,255);
 }
 
-h1{
-	color:red;
+.container{
+	margin-top:100px;
+	padding-right:15px;
+	padding-left:15px;
+}
+
+.column {
+	height: 200px;
+	border: 1px solid;
+	border-radius: 5px;
 }
 
