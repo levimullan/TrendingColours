@@ -19,9 +19,10 @@ gulp.task('compilePug', function(){
 		.pipe(gulp.dest('./dest'))
 });
 
-gulp.task('watch' , function(){
-	gulp.watch('./trendingColours.scss', ['compileSass'])
-	gulp.watch('./index.pug',['compilePug'])
+gulp.task('watch',['compileSass', 'compilePug'] , function() {
+	// watch for any new changes and compile again if needed
+	gulp.watch('./trendingColours.scss', ['compileSass']);
+	gulp.watch('./index.pug',['compilePug']);
 });
 
 
