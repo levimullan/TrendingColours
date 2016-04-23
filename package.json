@@ -18,6 +18,7 @@
   "homepage": "https://github.com/levimullan/TrendingColours#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.0",
     "jade": "^1.11.0",
     "jquery": "^2.2.3",
     "jribbble": "^2.0.4",

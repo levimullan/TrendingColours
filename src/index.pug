@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+	head
+	link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+	link(rel='stylesheet', href='trendingColours.css', type='text/css')
+
+	body
+
+	//- navbar
+	nav(class='backGround navbar navbar-default navbar-fixed-top')
+		div(class='container-fluid')
+			div(class='navbar-header')
+				a(class='navbar-brand font' href='#') 
+					span.fontThick #TRENDING
+					span.fontThin colours
+		
+	//- .container
+	//- 	//- Palete Declaration
+	//- 	mixin palette(hex1, hex2, hex3, hex4)
+	//- 	.row
+	//- 		.column.col-xs-3
+	//- 			p=hex1
+	//- 		.column.col-xs-3
+	//- 			p=hex2
+	//- 		.column.col-xs-3
+	//- 			p=hex3
+	//- 		.column.col-xs-3
+	//- 			p=hex4
+		
+			+palette('number','number2','number3','number4')
+
+	
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.26/system-csp-production.js')
+	
+	script(src="https://code.jquery.com/jquery-2.2.3.min.js", integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=", crossorigin="anonymous")
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+	script(src='output.js')
+
+								
+								
+						
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
