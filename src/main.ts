@@ -1,4 +1,5 @@
-import Dribble from './Dribble'
+import lemmons from './dribbble.ts'
+require('./styles/main.scss');
+declare var require: any;
 
 
-var dribble = new Dribble();
