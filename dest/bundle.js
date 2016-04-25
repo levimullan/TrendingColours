@@ -44,24 +44,37 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var styles = __webpack_require__(1);
-	var dribbble = __webpack_require__(5);
-
-
-	console.log(dribbble)
+	"use strict";
+	var dribbble_ts_1 = __webpack_require__(1);
+	// read from right to left styles/main.scss ==> sass loader ==> compile to css ==> compile to stylesheet (so its not just strings)
+	var styles = __webpack_require__(2);
+	// read from right to left /dribbble.ts ==> ts-loader
+	// var lemmons = require('./dribbble.ts');
+	// var file2 = require('./file2.ts'); 
+	console.log(dribbble_ts_1["default"]);
 
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var lemmons = "I am a default export named lemmons";
+	exports.__esModule = true;
+	exports["default"] = lemmons;
+
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(5)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -78,10 +91,10 @@
 	}
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
@@ -92,7 +105,7 @@
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -148,7 +161,7 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -397,14 +410,6 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
-
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	module.exports = 'dribble';
-	console.log('hey hey');
 
 
 /***/ }
