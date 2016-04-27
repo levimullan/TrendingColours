@@ -1,0 +1,35 @@
+@mixin formInput ($width) {
+	width: $width;
+	background: transparent;
+    border: none;
+    border-bottom: 1px solid #979797;
+
+    opacity: 0.5;
+	font-family: AvenirNext-Medium;
+	font-size: 16px;
+	color: #4A4A4A;
+
+}
+
+input:focus {
+  	outline: none;
+}
+
+.glyphicon {
+	margin-top: 6px;
+	float: right;
+	color: #009688;
+}
+
+.field1 {
+	@include formInput(150px);
+}
+
+.field2{
+	@include formInput(150px);
+	margin-left:11px;
+}
+
+
+
+
