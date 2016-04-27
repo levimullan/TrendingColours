@@ -1,7 +1,6 @@
 .container-fluid {
-	height:64px;
+	height: 64px;
 }
-
 
 .navSass {
 	height:64px;
@@ -18,10 +17,25 @@
 	margin-left: -10px;
 }
 
-.formSass {
+.hx-login-form {
 	margin-top: 19px;
 	margin-right: 73px;
 	width: 330px;
 	height: 28px;
 	float: right;
+}
+.hx-nav {
+	background: white;
+	//...
+	.hx-logo-text {
+		//..
+	}
+
+	.container-fluid {
+		
+	}
+
+	.hx-gif {
+		//..
+	}
 }
