@@ -7,6 +7,11 @@
 		height: 64px;
 	}	
 
+	.navbar-header {
+		height: 64px;
+		width: 300px;
+	}
+
 	.logo {
 		width: 61px;
 		height: auto;
@@ -15,7 +20,7 @@
 		float: left;
 	}
 
-	.brandContainer {
+	.brand-container {
 		margin-top:15px;
 		height:33px;
 		float: right;
@@ -24,7 +29,7 @@
 		margin-left: -10px;
 	}
 
-	.titleFont {
+	.title-font {
 		font-family: HelveticaNeue-Medium;
 		font-size: 24px;
 		color: rgba(0,0,0,0.87);
@@ -32,7 +37,7 @@
 		line-height: 32px;
 	}
 
-	.titleFont2 {
+	.title-font2 {
 		font-family: HelveticaNeue-Thin;
 		font-size: 24px;
 		color: rgba(0,0,0,0.87);
@@ -41,10 +46,15 @@
 	}
 
 	.hx-login-form {
-		margin-top: 19px;
 		margin-right: 73px;
-		width: 330px;
-		height: 28px;
+		width: 360px;
+		height: 64px;
+		float: right;
+	}
+
+	.hx-nav-icon{
+		height:28px;
+		width:20px;
 		float: right;
 	}
 }
