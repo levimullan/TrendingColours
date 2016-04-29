@@ -1,4 +1,9 @@
+.html,
 .background {
 	background: $background-grey;
+	overflow:hidden;
+	height:100vh;
 	margin-top: 64px;
+	margin-left: 25px;
+	margin-right: 25px;
 }

@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+// cmt + tab    switched apps
+// cmd + ~      swithces windows
 
 module.exports = {
     
@@ -8,7 +9,8 @@ module.exports = {
     	filename: 'bundle.js',
     	path: './dest'
     },
-
+    devtool: 'source-map',
+    
     plugins: [new HtmlWebpackPlugin({
     	template: './src/index.jade'
     })],

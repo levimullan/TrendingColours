@@ -4,17 +4,19 @@ declare var $: any;
 // What URL is the data located at? https://api.dribbble.com/v1/shots
 // are any headers, or authorizations required? Bearer d022a312419233de2c4cd7a7bac92718df25beb367655278c1b74b219981ff42
 
-function print(){
-	console.log('it got it')
+function getShots(cb) {
+
+	$.ajax({
+		method: 'GET',
+		headers: {
+			authorization: "Bearer d022a312419233de2c4cd7a7bac92718df25beb367655278c1b74b219981ff42"
+		},
+		url: 'https://api.dribbble.com/v1/shots',
+		success: function(shotsArray) {
+			cb(shotsArray);
+		},
+	});
+
 }
 
-$.ajax({
-	method: 'GET',
-	headers: {
-		authorization: "Bearer d022a312419233de2c4cd7a7bac92718df25beb367655278c1b74b219981ff42"
-	},
-	url: 'https://api.dribbble.com/v1/shots',
-	success: function(shots) {
-		console.log(shots);
-	},
-});
+export default getShots;
