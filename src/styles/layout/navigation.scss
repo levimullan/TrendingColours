@@ -7,17 +7,20 @@
 		height: 64px;
 	}	
 
-	.navbar-header {
-		height: 64px;
-		width: 300px;
+	.hx-logo-container {
+		display:inline;
 	}
 
-	.logo {
-		width: 61px;
-		height: auto;
-		margin-top: 9px;
+	.hx-image-logo {
+		margin-top:10px;
 		margin-left: 42px;
 		float: left;
+	}
+
+	.hx-text-logo {
+		display:inline;
+		margin-top:20px;
+		margin-left: -30px;
 	}
 
 	.brand-container {

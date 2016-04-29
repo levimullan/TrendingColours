@@ -2,5 +2,31 @@
 	width: 207px;
 	height: 271px;
 	background: #FFFFFF;
+	padding:7px;
 	box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.34);
+}
+
+.hx-card-color {
+	width: 193px;
+	height: 193px;
+	background: #FFCFF4;
+}
+
+.hx-color-info {
+	padding-top:7px;
+}
+
+.hx-card-text-18 {
+	line-height: 70%;
+	font-family: HelveticaNeue-Bold;
+	font-size: 18px;
+	color: #000000;
+}
+
+.hx-card-text-14 {
+	line-height: 70%;
+	font-family: HelveticaNeue-Medium;
+	font-size: 14px;
+	color: #000000;
+
 }
